@@ -2,7 +2,7 @@ var Year = require('./leap');
 
 describe('Leap year', function() {
 
-  it('is not very common', function() {
+  xit('is not very common', function() {
     var year = new Year(2015);
     expect(year.isLeap()).toBe(false);
   });
@@ -17,7 +17,7 @@ describe('Leap year', function() {
     expect(year.isLeap()).toBe(false);
   });
 
-  xit('is reintroduced every 400 years to adjust another day', function() {
+  it('is reintroduced every 400 years to adjust another day', function() {
     var year = new Year(2000);
     expect(year.isLeap()).toBe(true);
   });
